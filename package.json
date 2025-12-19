@@ -1,0 +1,44 @@
+# Project Metadata and Configuration
+{
+  "name": "te-explico",
+  "version": "0.1.0-alpha",
+  "description": "Multi-platform AI-powered contextual learning assistant",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eddmtzarias/TE-explico.git"
+  },
+  "keywords": [
+    "ai",
+    "learning-assistant",
+    "contextual-learning",
+    "multi-platform",
+    "education",
+    "omnimaestro"
+  ],
+  "author": "TOKRAGGCORP",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eddmtzarias/TE-explico/issues"
+  },
+  "homepage": "https://github.com/eddmtzarias/TE-explico#readme",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0",
+    "python": ">=3.10.0"
+  },
+  "workspaces": [
+    "core",
+    "frontend/web"
+  ],
+  "scripts": {
+    "build": "./scripts/build.sh all",
+    "build:core": "./scripts/build.sh core",
+    "build:backend": "./scripts/build.sh backend",
+    "build:frontend": "./scripts/build.sh frontend",
+    "build:ai": "./scripts/build.sh ai",
+    "test": "./scripts/build.sh all test",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down",
+    "docker:logs": "docker-compose logs -f"
+  }
+}

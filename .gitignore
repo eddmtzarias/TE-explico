@@ -1,0 +1,272 @@
+# TE-explico - Multi-platform .gitignore
+
+# ============================================
+# Operating Systems
+# ============================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# ============================================
+# IDEs and Editors
+# ============================================
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# IntelliJ IDEA / Android Studio
+.idea/
+*.iml
+*.iws
+*.ipr
+.gradle/
+local.properties
+
+# Xcode
+xcuserdata/
+*.xcworkspace
+*.xcodeproj/
+
+# ============================================
+# Programming Languages
+# ============================================
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Node.js / JavaScript / TypeScript
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.eslintcache
+.node_repl_history
+.yarn-integrity
+*.tsbuildinfo
+.next/
+out/
+.nuxt
+dist/
+.cache/
+.parcel-cache/
+.vercel
+
+# Go
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+go.work
+
+# Dart / Flutter
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+flutter_*.log
+*.g.dart
+*.freezed.dart
+
+# Rust
+target/
+Cargo.lock
+**/*.rs.bk
+
+# ============================================
+# Mobile Development
+# ============================================
+
+# Android
+*.apk
+*.ap_
+*.dex
+.externalNativeBuild
+.cxx
+captures/
+output.json
+.gradle
+gradle-app.setting
+!gradle-wrapper.jar
+proguard/
+
+# iOS
+*.ipa
+*.dSYM.zip
+*.dSYM
+Pods/
+Podfile.lock
+
+# React Native
+.expo/
+.expo-shared/
+
+# ============================================
+# Backend / Databases
+# ============================================
+
+# Database files
+*.sqlite
+*.sqlite3
+*.db
+
+# Redis
+dump.rdb
+
+# Logs
+logs/
+*.log
+
+# ============================================
+# AI / ML
+# ============================================
+
+# Model files (large binaries)
+*.h5
+*.pkl
+*.pt
+*.pth
+*.onnx
+*.pb
+*.tflite
+*.mlmodel
+*.caffemodel
+checkpoints/
+wandb/
+mlruns/
+.neptune/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# ============================================
+# Infrastructure / DevOps
+# ============================================
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# Docker
+*.dockerignore
+
+# Kubernetes
+*.kubeconfig
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+*.env
+
+# Secrets
+secrets/
+*.pem
+*.key
+*.cert
+*.crt
+
+# ============================================
+# Build Artifacts & Dependencies
+# ============================================
+
+# General build outputs
+bin/
+obj/
+out/
+build/
+dist/
+
+# Package managers
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ============================================
+# Testing & Coverage
+# ============================================
+
+coverage/
+*.cover
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.coveragerc
+test-results/
+junit.xml
+
+# ============================================
+# Temporary & Cache Files
+# ============================================
+
+tmp/
+temp/
+*.tmp
+*.bak
+*.swp
+*.swo
+*~
+.cache/

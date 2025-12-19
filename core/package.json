@@ -1,0 +1,35 @@
+{
+  "name": "@te-explico/core",
+  "version": "0.1.0-alpha",
+  "description": "Core business logic and shared utilities for TE-explico",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "echo 'Build not yet implemented'",
+    "test": "echo 'Tests not yet implemented'",
+    "lint": "echo 'Linting not yet implemented'",
+    "format": "echo 'Formatting not yet implemented'"
+  },
+  "keywords": [
+    "te-explico",
+    "core",
+    "learning-assistant",
+    "ai"
+  ],
+  "author": "TOKRAGGCORP",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "jest": "^29.0.0",
+    "prettier": "^3.0.0",
+    "ts-jest": "^29.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "zod": "^3.22.0"
+  }
+}

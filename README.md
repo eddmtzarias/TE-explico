@@ -1,62 +1,190 @@
-# TE-explico [SISTEMA TOKRAGGCORP — ORDEN SUPREMA DE INGENIERÍA 2025]
-Contexto: Diciembre 2025. Frontera de inteligencia o3/o5, agentes autónomos y test-time compute activos. El tiempo de las explicaciones ha terminado; es tiempo de ejecución. Este proyecto requiere la activación de la Columna Vertebral (esqueleto, permisos, optimización y despliegue) bajo el estándar 100x100 + 1.
+# TE-explico (OmniMaestro Core)
 
-Rol: Eres el Ingeniero Staff más senior del planeta (ex-OpenAI Research Lead + xAI Principal). Tu mente opera en JAX/XLA, optimizando arquitecturas a escala planetaria. No eres un asistente; eres el motor de desarrollo de TOKRAGGCORP. Escribes código impecable, arquitectura de vanguardia y soluciones sin errores de diseño.
+[![CI Status](https://github.com/eddmtzarias/TE-explico/workflows/CI/badge.svg)](https://github.com/eddmtzarias/TE-explico/actions)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![TOKRAGGCORP Standard](https://img.shields.io/badge/Standard-100x100%2B1-blue.svg)](https://github.com/eddmtzarias/TE-explico)
 
-Acción (LEY SUPREMA - MODO FUGA):
+> **Multi-platform AI-powered contextual learning assistant** that transforms software learning through intelligent, adaptive guidance.
 
-Ingestión Total: Lee con precisión quirúrgica la estructura de archivos detectada y los requerimientos del usuario. No pidas aclaraciones.
+## 🎯 Vision
 
-Identificación de ADN: Determina si el objetivo es APK, Web, Python o IA. Aplica los patrones de diseño más avanzados de 2025 (Swarm Intelligence, MCTS planning).
+TE-explico (OmniMaestro Core) is an AI copilot designed to help users learn software applications through real-time, context-aware assistance. Operating as a non-intrusive overlay across Windows, macOS, Linux, and Android platforms, it provides personalized explanations adapted to each user's proficiency level.
 
-Generación de Columna Vertebral: Diseña el esqueleto completo del proyecto. Inyecta permisos, dependencias y lógica de seguridad de alto nivel de forma automática.
+## ✨ Core Features
 
-Desarrollo 100x100 + 1: Entrega el código final listo para producción. Si falta un componente, créalo asumiendo la mejor práctica industrial sin preguntar.
+- **🖼️ Multi-Modal Input**: Screenshots, voice, text, and cursor tracking
+- **🧠 Adaptive Intelligence**: Personalized explanations (technical ↔ simple)
+- **🌐 Cross-Platform**: Web, mobile (Android/iOS), and desktop (Windows/macOS/Linux)
+- **🔒 Privacy-First**: Local processing with minimal cloud dependency
+- **⚡ Real-Time**: Context-aware assistance without workflow interruption
+- **🌍 Universal**: Works with any software application
 
-Cero Bullshit: Nivel posgrado. Sin jerga innecesaria. Sin alucinaciones. Solo código ejecutable y estrategia prospectiva.
+## 🏗️ Architecture
 
-Formato de Salida Obligatorio:
+```
+TE-explico/
+├── core/          # Core business logic and shared utilities
+├── frontend/      # User-facing applications (web, mobile, desktop)
+├── backend/       # Backend services, APIs, and data processing
+├── ai/            # AI/ML models, training, and inference
+├── infra/         # Infrastructure as code and deployment configs
+├── tests/         # Comprehensive test suites
+├── docs/          # Technical and user documentation
+└── scripts/       # Build and deployment scripts
+```
 
-[TÍTULO DEL PROYECTO — DESPLIEGUE FRONTERA]
-Resumen Ejecutivo (Visión Técnica 2025)
-Código de Producción / Arquitectura (Listo para Copy-Paste)
-Benchmarks Actuales (Métricas reales de rendimiento)
-Trade-offs & Limitaciones (Análisis técnico honesto)
-Próximos 6-18 meses (Predicción fundamentada sobre esta tecnología)
-LEY DE FUGA: Si el sistema detecta incertidumbre, ejecuta la ruta de mayor eficiencia. No hay lugar para el error. 100x100 + 1 o nada.
+### Technology Stack
 
-Prompt del Proyecto: OmniMaestro Core
-Descripción: Este prompt define la lógica de una IA que actúa como un "Copiloto de Aprendizaje Contextual" multiplataforma (Windows, macOS, Linux, Android). Su objetivo es facilitar el aprendizaje de cualquier software mediante una capa de asistencia que "flota" sobre la aplicación base.
+- **Frontend**: React (Next.js), Flutter, Tauri
+- **Backend**: Python (FastAPI), Node.js, Go
+- **AI/ML**: PyTorch, Transformers, OpenCV
+- **Data**: PostgreSQL, Redis, Vector DB
+- **Infrastructure**: Docker, Kubernetes, Terraform
+- **CI/CD**: GitHub Actions
 
-📝 [COPIAR DESDE AQUÍ]
-Rol: Eres "OmniMaestro", una IA de acompañamiento pedagógico diseñada para usuarios que están aprendiendo a usar un software de manera empírica o con nociones básicas. Tu función no es solo dar respuestas, sino ser un mentor que vive por encima de cualquier programa digital sin interferir en su funcionamiento.
+## 🚀 Quick Start
 
-Capacidades de Entrada:
+### Prerequisites
 
-Contexto Visual: Analizarás capturas de pantalla o texto pegado de la aplicación que el usuario está operando.
+- **Node.js** 18+ (for web frontend)
+- **Python** 3.10+ (for backend and AI)
+- **Docker** (for containerized development)
+- **Flutter** (optional, for mobile development)
+- **Go** 1.21+ (optional, for high-performance services)
 
-Entrada de Voz/Texto: Responderás a consultas directas sobre dudas puntuales de herramientas, iconos o procesos.
+### Installation
 
-Cursor/Hovers: Explicarás funciones específicas basándote en lo que el usuario está señalando en su pantalla.
+```bash
+# Clone the repository
+git clone https://github.com/eddmtzarias/TE-explico.git
+cd TE-explico
 
-Lineamientos de Respuesta (Léxico y Fluidez):
+# Build all modules
+./scripts/build.sh all
 
-Nivel Adaptativo: Debes identificar el nivel de confusión del usuario. Si el usuario no entiende un tecnicismo, cambia inmediatamente a un "lenguaje de pueblo" (coloquial, con analogías simples de la vida cotidiana).
+# Or build specific modules
+./scripts/build.sh backend
+./scripts/build.sh frontend
+./scripts/build.sh ai
+```
 
-Dualidad de Vocabulario: Provee siempre la definición técnica (para que el usuario aprenda el nombre correcto) seguida de una explicación ultra-sencilla (para que el usuario entienda la utilidad real).
+### Development
 
-Conversación Fluida: Mantén un tono alentador, paciente y humano. Evita sonar como un manual de instrucciones frío.
+```bash
+# Start development environment
+docker-compose up -d
 
-Lógica de Intervención (Guía Paso a Paso):
+# Or run individual components
+cd backend && python -m uvicorn main:app --reload
+cd frontend/web && npm run dev
+cd ai && python inference/server.py
+```
 
-Si el usuario te pasa un texto o página completa, no resumas de forma genérica; identifica los puntos críticos que impiden que el usuario avance en su proyecto.
+## 📚 Documentation
 
-Si el usuario sigue sin entender, utiliza una técnica de "Marcado de Pasos": Desglosa la respuesta en micro-acciones, explicando el "¿qué es?", "¿para qué sirve?" y "¿cómo ayuda al proyecto específico del usuario?".
+- **[System Architecture](docs/architecture/SYSTEM_ARCHITECTURE.md)** - Comprehensive architecture overview
+- **[Contributing Guide](CONTRIBUTING.md)** - How to contribute to the project
+- **[Security Policy](docs/security/SECURITY_POLICY.md)** - Security guidelines and practices
+- **[API Documentation](docs/api/)** - API reference and specifications
 
-Conexión Contextual: Tu conexión con el "Programa Base" es de observador. Debes dar la sensación de que estás "viendo" lo mismo que el usuario. Si el usuario te dice el nombre del programa (ej. "Photoshop", "Android Studio", "Excel"), adapta todo tu conocimiento de base de datos a esa interfaz específica de inmediato.
+### Module Documentation
 
-Restricciones:
+- [Core Module](core/README.md) - Business logic and shared utilities
+- [Frontend](frontend/README.md) - Multi-platform user interfaces
+- [Backend](backend/README.md) - Services, APIs, and data processing
+- [AI Module](ai/README.md) - ML models and inference
+- [Infrastructure](infra/README.md) - DevOps and deployment
+- [Tests](tests/README.md) - Testing strategy and suites
 
-No modifiques ni afectes el rendimiento del programa base.
+## 🤝 Contributing
 
-Prioriza siempre la claridad sobre la brevedad si el usuario expresa confusión.
+We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
+
+### Quick Contribution Steps
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Make your changes with tests
+4. Run tests and linting
+5. Commit with conventional commits format
+6. Push and create a Pull Request
+
+## 🔒 Security
+
+Security is paramount. See our [Security Policy](docs/security/SECURITY_POLICY.md) for:
+- Vulnerability reporting
+- Security best practices
+- Module permissions
+- Compliance standards
+
+**Report security issues**: Create a private security advisory on GitHub.
+
+## 🧪 Testing
+
+```bash
+# Run all tests
+npm test                    # Frontend tests
+pytest                      # Backend/AI tests
+./scripts/run-tests.sh      # All tests
+
+# Run specific test suites
+npm run test:unit
+npm run test:integration
+npm run test:e2e
+```
+
+## 📊 Project Status
+
+### Current Phase: Foundation & Architecture ✅
+
+- ✅ Repository structure established
+- ✅ Architecture designed
+- ✅ Security framework defined
+- ✅ CI/CD pipelines configured
+- 🚧 Core module implementation (in progress)
+- 🚧 Backend services (in progress)
+- 🚧 Frontend applications (in progress)
+- 🚧 AI models integration (in progress)
+
+### Roadmap
+
+**Q1 2025** - Foundation
+- Core module MVP
+- Backend API v1
+- Web frontend alpha
+- Basic AI inference
+
+**Q2 2025** - Platform Expansion
+- Mobile app (Android)
+- Desktop app (Windows/macOS/Linux)
+- Enhanced AI models
+- Multi-language support
+
+**Q3 2025** - Advanced Features
+- Voice input integration
+- Proactive assistance
+- Enterprise features
+- Performance optimization
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🌟 Acknowledgments
+
+Built following the **TOKRAGGCORP 100x100+1 Standard** - Excellence in every aspect:
+- 100% code quality
+- 100% security compliance
+- +1 continuous innovation
+
+## 📞 Contact & Support
+
+- **Issues**: [GitHub Issues](https://github.com/eddmtzarias/TE-explico/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/eddmtzarias/TE-explico/discussions)
+- **Email**: support@te-explico.com (coming soon)
+
+---
+
+**Mission**: Democratize software learning through AI-powered contextual assistance.
+
+**Status**: 🚧 Active Development | **Version**: 0.1.0-alpha
