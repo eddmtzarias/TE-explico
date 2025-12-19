@@ -1,0 +1,44 @@
+# Code Owners for TE-explico
+# 
+# This file defines individuals or teams responsible for code in this repository.
+# Code owners are automatically requested for review when someone opens a pull request
+# that modifies code that they own.
+#
+# More information: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Default owners for everything in the repo
+# These owners will be the default owners for everything
+* @eddmtzarias
+
+# Core module - Critical business logic
+/core/ @eddmtzarias
+
+# Frontend applications
+/frontend/ @eddmtzarias
+
+# Backend services and APIs
+/backend/ @eddmtzarias
+
+# AI/ML models and processing
+/ai/ @eddmtzarias
+
+# Infrastructure and deployment
+/infra/ @eddmtzarias
+
+# Tests - require review from any core maintainer
+/tests/ @eddmtzarias
+
+# Documentation
+/docs/ @eddmtzarias
+*.md @eddmtzarias
+
+# Configuration files - require careful review
+.gitignore @eddmtzarias
+.github/ @eddmtzarias
+*.yml @eddmtzarias
+*.yaml @eddmtzarias
+*.json @eddmtzarias
+
+# Security-sensitive files
+LICENSE @eddmtzarias
+CODEOWNERS @eddmtzarias

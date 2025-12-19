@@ -1,0 +1,35 @@
+# AI/ML Module - Python Requirements
+
+# Deep Learning Frameworks
+torch==2.1.2
+torchvision==0.16.2
+transformers==4.36.2
+
+# Computer Vision
+opencv-python==4.9.0.80
+pillow==10.2.0
+
+# NLP
+spacy==3.7.2
+nltk==3.8.1
+
+# ML Utilities
+numpy==1.26.3
+pandas==2.1.4
+scikit-learn==1.4.0
+
+# Model Serving
+onnxruntime==1.16.3
+
+# Vector Database
+pinecone-client==3.0.0
+
+# Testing & Development
+pytest==7.4.3
+pytest-cov==4.1.0
+pylint==3.0.3
+mypy==1.8.0
+
+# Utilities
+python-dotenv==1.0.0
+tqdm==4.66.1
