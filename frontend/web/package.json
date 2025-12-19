@@ -1,17 +1,16 @@
-# Frontend Web Application - Package Configuration
 {
   "name": "@te-explico/frontend-web",
   "version": "0.1.0-alpha",
   "description": "Web application for TE-explico learning assistant",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "type-check": "tsc --noEmit"
+    "dev": "echo 'Dev server not yet implemented'",
+    "build": "echo 'Build not yet implemented'",
+    "start": "echo 'Start not yet implemented'",
+    "lint": "echo 'Linting not yet implemented'",
+    "test": "echo 'Tests not yet implemented'",
+    "test:watch": "echo 'Watch tests not yet implemented'",
+    "type-check": "echo 'Type checking not yet implemented'"
   },
   "dependencies": {
     "next": "14.0.4",

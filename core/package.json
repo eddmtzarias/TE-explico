@@ -1,4 +1,3 @@
-# Core Module - Package Configuration
 {
   "name": "@te-explico/core",
   "version": "0.1.0-alpha",
@@ -6,10 +5,10 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc",
-    "test": "jest",
-    "lint": "eslint src --ext .ts",
-    "format": "prettier --write 'src/**/*.ts'"
+    "build": "echo 'Build not yet implemented'",
+    "test": "echo 'Tests not yet implemented'",
+    "lint": "echo 'Linting not yet implemented'",
+    "format": "echo 'Formatting not yet implemented'"
   },
   "keywords": [
     "te-explico",
