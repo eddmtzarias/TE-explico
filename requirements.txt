@@ -1,0 +1,42 @@
+# Python dependencies for AI module
+# Core ML frameworks
+torch>=2.1.0
+transformers>=4.35.0
+accelerate>=0.24.0
+sentencepiece>=0.1.99
+tokenizers>=0.15.0
+
+# Web framework
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+pydantic>=2.5.0
+
+# Optimization and performance
+onnx>=1.15.0
+onnxruntime-gpu>=1.16.0
+optimum>=1.14.0
+triton>=2.1.0
+
+# Data processing
+numpy>=1.24.0
+pandas>=2.1.0
+
+# Monitoring and observability
+prometheus-client>=0.19.0
+opentelemetry-api>=1.21.0
+opentelemetry-sdk>=1.21.0
+
+# Testing
+pytest>=7.4.0
+pytest-cov>=4.1.0
+pytest-asyncio>=0.21.0
+httpx>=0.25.0
+
+# Security
+cryptography>=41.0.0
+python-multipart>=0.0.6
+
+# Utilities
+python-dotenv>=1.0.0
+aiohttp>=3.9.0
+tenacity>=8.2.0

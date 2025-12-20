@@ -1,0 +1,66 @@
+groups:
+  - name: latency_alerts
+    interval: 30s
+    rules:
+      - alert: HighAIInferenceLatency
+        expr: histogram_quantile(0.95, rate(inference_latency_seconds_bucket[5m])) > 0.5
+        for: 5m
+        labels:
+          severity: critical
+          component: ai-service
+        annotations:
+          summary: "AI inference p95 latency exceeds 500ms"
+          description: "The 95th percentile of AI inference latency is {{ $value }}s, exceeding the 500ms target"
+
+      - alert: HighAPILatency
+        expr: histogram_quantile(0.95, rate(http_request_duration_seconds_bucket[5m])) > 1
+        for: 5m
+        labels:
+          severity: warning
+          component: backend
+        annotations:
+          summary: "API p95 latency exceeds 1s"
+          description: "The 95th percentile of API latency is {{ $value }}s"
+
+  - name: error_alerts
+    interval: 30s
+    rules:
+      - alert: HighErrorRate
+        expr: rate(inference_requests_total{status="error"}[5m]) / rate(inference_requests_total[5m]) > 0.05
+        for: 5m
+        labels:
+          severity: critical
+          component: ai-service
+        annotations:
+          summary: "High error rate in AI service"
+          description: "Error rate is {{ $value | humanizePercentage }}"
+
+      - alert: ServiceDown
+        expr: up == 0
+        for: 2m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Service {{ $labels.job }} is down"
+          description: "{{ $labels.job }} has been down for more than 2 minutes"
+
+  - name: resource_alerts
+    interval: 30s
+    rules:
+      - alert: HighMemoryUsage
+        expr: (node_memory_MemTotal_bytes - node_memory_MemAvailable_bytes) / node_memory_MemTotal_bytes > 0.9
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High memory usage"
+          description: "Memory usage is above 90%"
+
+      - alert: HighCPUUsage
+        expr: 100 - (avg by(instance) (rate(node_cpu_seconds_total{mode="idle"}[5m])) * 100) > 80
+        for: 10m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High CPU usage"
+          description: "CPU usage is above 80%"

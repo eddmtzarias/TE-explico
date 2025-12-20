@@ -1,0 +1,79 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Testing
+.coverage
+.pytest_cache/
+coverage/
+*.cover
+.hypothesis/
+htmlcov/
+
+# Build outputs
+*.log
+*.out
+*.pid
+*.gz
+*.tgz
+*.zip
+frontend/dist/
+frontend/build/
+backend/dist/
+backend/build/
+ai/models/*.pt
+ai/models/*.pth
+ai/models/*.onnx
+
+# Environment
+.env
+.env.local
+.env.*.local
+*.local
+
+# Temporary
+tmp/
+temp/
+*.tmp
+
+# Docker
+.dockerignore
+
+# Terraform
+infra/terraform/.terraform/
+infra/terraform/*.tfstate
+infra/terraform/*.tfstate.backup
+infra/terraform/.terraform.lock.hcl
+
+# OS
+Thumbs.db

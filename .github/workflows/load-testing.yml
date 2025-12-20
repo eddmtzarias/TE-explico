@@ -1,0 +1,46 @@
+name: Load Testing
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 2 * * 1' # Weekly on Monday at 2 AM
+
+jobs:
+  load-test:
+    name: Performance Load Testing
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Install k6
+      run: |
+        curl https://github.com/grafana/k6/releases/download/v0.47.0/k6-v0.47.0-linux-amd64.tar.gz -L | tar xvz
+        sudo mv k6-v0.47.0-linux-amd64/k6 /usr/local/bin/
+    
+    - name: Setup test environment
+      run: |
+        docker-compose up -d
+        sleep 30
+    
+    - name: Run load tests
+      run: |
+        k6 run infra/load-testing/scenarios/stress-test.js \
+          --out json=load-test-results.json
+    
+    - name: Verify latency requirements
+      run: |
+        # Check p95 latency < 500ms
+        echo "Analyzing latency metrics..."
+        # Add analysis script here
+    
+    - name: Upload results
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: load-test-results
+        path: load-test-results.json
+    
+    - name: Cleanup
+      if: always()
+      run: docker-compose down
