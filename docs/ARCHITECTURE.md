@@ -250,8 +250,10 @@ _mark_step_completed()  # Update state
 ### Command Execution
 - ✅ Commands run with timeout (30s)
 - ✅ Working directory restricted to project root
-- ✅ No dynamic code execution from user input
-- ✅ Shell commands are predefined in STEPS
+- ⚠️ Uses shell=True for complex commands (pipes, redirects)
+- ✅ Commands are predefined in STEPS dictionary (not from user input)
+- ✅ Safe in trusted development environments
+- ⚠️ Do not modify STEPS with untrusted command strings
 
 ---
 

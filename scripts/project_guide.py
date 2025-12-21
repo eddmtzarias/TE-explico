@@ -236,7 +236,13 @@ class ProjectGuide:
             json.dump(self.state, f, indent=2)
 
     def _run_command(self, command: str) -> tuple[bool, str]:
-        """Run a shell command and return success status and output"""
+        """
+        Run a shell command and return success status and output.
+        
+        Security Note: Uses shell=True to support complex commands (pipes, redirects).
+        Commands are pre-defined in STEPS dictionary, not from user input.
+        This is safe in trusted development environments.
+        """
         try:
             result = subprocess.run(
                 command,
@@ -411,9 +417,15 @@ class ProjectGuide:
         validation_commands = step_info.get("validation_commands", [])
         if not validation_commands:
             print(f"\n{Colors.WARNING}⚠️  Este paso no tiene comandos de validación automática{Colors.ENDC}")
-            response = input(f"\n¿Marcar como completado manualmente? (s/n): ")
-            if response.lower() == 's':
-                self._mark_step_completed(step_num)
+            while True:
+                response = input(f"\n¿Marcar como completado manualmente? (s/n): ").lower().strip()
+                if response in ['s', 'si', 'y', 'yes']:
+                    self._mark_step_completed(step_num)
+                    break
+                elif response in ['n', 'no']:
+                    break
+                else:
+                    print(f"{Colors.WARNING}Por favor, responde 's' o 'n'{Colors.ENDC}")
             return
 
         print(f"\n{Colors.BOLD}Ejecutando validaciones...{Colors.ENDC}\n")
