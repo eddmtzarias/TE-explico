@@ -30,11 +30,15 @@ jobs:
       - name: 🔧 Auto-Fix Integrity Issues
         id: autofix
         continue-on-error: true
+        env:
+          PYTHONPATH: ${{ github.workspace }}
         run: |
           python scripts/fix_integrity_anomalies.py
       
       - name: 🔍 Run Integrity Audit
         id: audit
+        env:
+          PYTHONPATH: ${{ github.workspace }}
         run: |
           python -c "
           from pixarr_design.core.agent import PixARRAgent
