@@ -8,7 +8,6 @@ explicaciones adaptativas a través de múltiples plataformas:
 - Web (PWA) vía React/Next.js
 
 Integra:
-- Sistema PixARR Design para integridad de archivos
 - Procesamiento de imágenes con OCR
 - IA conversacional para explicaciones adaptativas
 - Guía inteligente de desarrollo paso a paso
@@ -47,7 +46,6 @@ FEATURES = {
     "ocr_processing": True,
     "ai_explanations": True,
     "adaptive_learning": True,
-    "pixarr_integrity": True,
     "offline_mode": False,  # Próximamente
 }
 

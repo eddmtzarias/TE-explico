@@ -1,3 +1,3 @@
 """
-Configuration modules for PixARR Design system.
+Configuration modules (en desarrollo).
 """

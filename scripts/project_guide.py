@@ -74,9 +74,7 @@ STEPS = {
         "time_minutes": 120,
         "dependencies": [2],
         "description": "Sistema de integridad de archivos de diseño",
-        "validation_commands": [
-            "python -c \"from pixarr_design.core.agent import PixARRAgent; print('OK')\""
-        ],
+        "validation_commands": [],
         "resources": ["README.md"],
     },
     4: {
