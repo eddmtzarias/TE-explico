@@ -4,7 +4,7 @@
   "current_phase_name": "Setup Inicial",
   "current_step": 5,
   "platform_target": "desktop",
-  "completed_steps": [1, 2, 4],
+  "completed_steps": [1, 2, 3, 4],
   "skipped_warnings": [],
   "in_progress_steps": [],
   "blocked_steps": [],
@@ -33,14 +33,14 @@
   ],
   "statistics": {
     "total_steps": 50,
-    "completed_count": 3,
-    "pending_count": 47,
-    "progress_percentage": 6,
+    "completed_count": 4,
+    "pending_count": 46,
+    "progress_percentage": 8,
     "steps_by_criticality": {
       "critical": {
         "total": 29,
-        "completed": 2,
-        "pending": 27
+        "completed": 3,
+        "pending": 26
       },
       "important": {
         "total": 13,
@@ -56,9 +56,9 @@
     "steps_by_phase": {
       "setup": {
         "total": 6,
-        "completed": 3,
-        "pending": 3,
-        "progress_percentage": 50
+        "completed": 4,
+        "pending": 2,
+        "progress_percentage": 67
       },
       "core_backend": {
         "total": 4,

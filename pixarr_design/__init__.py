@@ -1,5 +1,5 @@
 """
-PixARR Design - Módulo de diseño (en desarrollo).
+PixARR Design - Sistema de gestión y monitoreo de archivos de diseño.
 """
 
-__version__ = "0.1.0"
+__version__ = "1.0.0"
