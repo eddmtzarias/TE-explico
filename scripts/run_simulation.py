@@ -5,6 +5,7 @@ Executes all 6 steps of the emulator test.
 """
 
 import sys
+import traceback
 from pathlib import Path
 from datetime import datetime
 
@@ -36,7 +37,7 @@ def create_sample_image(filename: str, text: str, color: str = "blue") -> str:
     try:
         # Try to use a default font
         font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 24)
-    except:
+    except (OSError, FileNotFoundError):
         # Fallback to default font
         font = ImageFont.load_default()
 
@@ -160,6 +161,5 @@ if __name__ == "__main__":
         run_simulation()
     except Exception as e:
         print(f"\n❌ Error durante la simulación: {str(e)}")
-        import traceback
         traceback.print_exc()
         sys.exit(1)
