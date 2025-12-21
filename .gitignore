@@ -8,17 +8,67 @@ __pycache__/
 dist/
 build/
 .pytest_cache/
+*.pyc
+venv/
+env/
+ENV/
+
+# Entorno y Secretos
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+secrets/
+credentials/
 
 # PixARR Design directories (runtime artifacts)
 designs/
 .pixarr_metadata/
+
+# Project State
+.project_state.json
 
 # IDE
 .vscode/
 .idea/
 *.swp
 *.swo
+*.sublime-*
 
 # OS
 .DS_Store
 Thumbs.db
+desktop.ini
+
+# Logs
+logs/
+*.log
+
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# Build artifacts
+target/
+*.wasm
+*.app
+*.exe
+*.dmg
+*.pkg
+
+# Testing
+coverage/
+.coverage
+htmlcov/
+
+# Temporal
+tmp/
+temp/
+*.tmp
+
+# Backups
+*.bak
+*.backup
+*~
