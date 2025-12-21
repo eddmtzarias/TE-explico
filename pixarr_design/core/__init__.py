@@ -1,3 +1,3 @@
 """
-Core modules for PixARR Design system.
+Core modules (en desarrollo).
 """

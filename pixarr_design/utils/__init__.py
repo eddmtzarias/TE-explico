@@ -1,3 +1,3 @@
 """
-Utility modules for PixARR Design system.
+Utility modules (en desarrollo).
 """
