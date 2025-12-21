@@ -1,29 +1,29 @@
 [
   {
     "type": "agent_activated",
-    "timestamp": "2025-12-21T11:31:20.546020Z",
+    "timestamp": "2025-12-21T11:36:44.170555Z",
     "workspace": "/home/runner/work/TE-explico/TE-explico",
     "supervisor": "Melampe001",
-    "activated_at": "2025-12-21T11:31:20.545976Z"
+    "activated_at": "2025-12-21T11:36:44.170508Z"
   },
   {
     "type": "artifact_created",
-    "timestamp": "2025-12-21T11:31:20.589753Z",
+    "timestamp": "2025-12-21T11:36:44.185881Z",
     "filename": "logo_emulador.png",
     "hash": "ea7a76d9914b5d3dbbceee7cd0d69b7de06923027083be78ff0853a897c7fb51",
     "creator": "PixARR Design",
-    "created_at": "2025-12-21T11:31:20.589689Z",
+    "created_at": "2025-12-21T11:36:44.185826Z",
     "version": 1,
     "status": "active",
     "supervisor": "Melampe001"
   },
   {
     "type": "artifact_modified",
-    "timestamp": "2025-12-21T11:31:20.599980Z",
+    "timestamp": "2025-12-21T11:36:44.196133Z",
     "filename": "logo_emulador_v2.png",
     "hash": "346d2321031d63515cd5fc37b8e7226df94025e130edc4a6b48dbf46d6866cef",
     "modifier": "PixARR Design",
-    "modified_at": "2025-12-21T11:31:20.599925Z",
+    "modified_at": "2025-12-21T11:36:44.196079Z",
     "description": "A\u00f1adir estrella y actualizar versi\u00f3n",
     "previous_hash": "",
     "version": 1,
@@ -31,7 +31,7 @@
   },
   {
     "type": "integrity_audit",
-    "timestamp": "2025-12-21T11:31:20.600744Z",
+    "timestamp": "2025-12-21T11:36:44.196915Z",
     "files_verified": 2,
     "anomalies": 2,
     "details": "Verified 2 files in /home/runner/work/TE-explico/TE-explico/designs/active",
@@ -39,61 +39,61 @@
   },
   {
     "type": "agent_activated",
-    "timestamp": "2025-12-21T11:31:42.645975Z",
+    "timestamp": "2025-12-21T11:36:59.015870Z",
     "workspace": "/home/runner/work/TE-explico/TE-explico",
     "supervisor": "Melampe001",
-    "activated_at": "2025-12-21T11:31:42.645906Z"
+    "activated_at": "2025-12-21T11:36:59.015798Z"
   },
   {
     "type": "agent_activated",
-    "timestamp": "2025-12-21T11:31:42.647386Z",
+    "timestamp": "2025-12-21T11:36:59.017217Z",
     "workspace": "/home/runner/work/TE-explico/TE-explico",
     "supervisor": "Melampe001",
-    "activated_at": "2025-12-21T11:31:42.647325Z"
+    "activated_at": "2025-12-21T11:36:59.017132Z"
   },
   {
     "type": "artifact_created",
-    "timestamp": "2025-12-21T11:31:42.653327Z",
+    "timestamp": "2025-12-21T11:36:59.023243Z",
     "filename": "test_image.png",
     "hash": "7a0e342f9e49390664a88b00bbb8370bf3084a231ab210c8ad972c2a5db20251",
     "creator": "TestCreator",
-    "created_at": "2025-12-21T11:31:42.653264Z",
+    "created_at": "2025-12-21T11:36:59.023176Z",
     "version": 1,
     "status": "active",
     "supervisor": "Melampe001"
   },
   {
     "type": "agent_activated",
-    "timestamp": "2025-12-21T11:31:42.654410Z",
+    "timestamp": "2025-12-21T11:36:59.024246Z",
     "workspace": "/home/runner/work/TE-explico/TE-explico",
     "supervisor": "Melampe001",
-    "activated_at": "2025-12-21T11:31:42.654349Z"
+    "activated_at": "2025-12-21T11:36:59.024186Z"
   },
   {
     "type": "agent_activated",
-    "timestamp": "2025-12-21T11:31:42.655603Z",
+    "timestamp": "2025-12-21T11:36:59.025529Z",
     "workspace": "/home/runner/work/TE-explico/TE-explico",
     "supervisor": "Melampe001",
-    "activated_at": "2025-12-21T11:31:42.655542Z"
+    "activated_at": "2025-12-21T11:36:59.025468Z"
   },
   {
     "type": "artifact_created",
-    "timestamp": "2025-12-21T11:31:42.658197Z",
+    "timestamp": "2025-12-21T11:36:59.027464Z",
     "filename": "test_image.png",
     "hash": "7a0e342f9e49390664a88b00bbb8370bf3084a231ab210c8ad972c2a5db20251",
     "creator": "TestCreator",
-    "created_at": "2025-12-21T11:31:42.658116Z",
+    "created_at": "2025-12-21T11:36:59.027400Z",
     "version": 1,
     "status": "active",
     "supervisor": "Melampe001"
   },
   {
     "type": "artifact_modified",
-    "timestamp": "2025-12-21T11:31:42.659416Z",
+    "timestamp": "2025-12-21T11:36:59.028582Z",
     "filename": "test_image.png",
-    "hash": "7fa17caaeb7e386626d8a435b9cac13f1bde53667077f996ccf744fc5a37cd40",
+    "hash": "6a49f09e65bb192dc9cdca84040441d66992c4ebfcfdf664615a460ff38cdd57",
     "modifier": "TestModifier",
-    "modified_at": "2025-12-21T11:31:42.659350Z",
+    "modified_at": "2025-12-21T11:36:59.028517Z",
     "description": "Updated colors",
     "previous_hash": "7a0e342f9e49390664a88b00bbb8370bf3084a231ab210c8ad972c2a5db20251",
     "version": 2,
@@ -101,43 +101,43 @@
   },
   {
     "type": "agent_activated",
-    "timestamp": "2025-12-21T11:31:42.660507Z",
+    "timestamp": "2025-12-21T11:36:59.029629Z",
     "workspace": "/home/runner/work/TE-explico/TE-explico",
     "supervisor": "Melampe001",
-    "activated_at": "2025-12-21T11:31:42.660442Z"
+    "activated_at": "2025-12-21T11:36:59.029564Z"
   },
   {
     "type": "artifact_created",
-    "timestamp": "2025-12-21T11:31:42.662395Z",
+    "timestamp": "2025-12-21T11:36:59.031555Z",
     "filename": "test_image.png",
     "hash": "7a0e342f9e49390664a88b00bbb8370bf3084a231ab210c8ad972c2a5db20251",
     "creator": "TestCreator",
-    "created_at": "2025-12-21T11:31:42.662327Z",
+    "created_at": "2025-12-21T11:36:59.031487Z",
     "version": 1,
     "status": "active",
     "supervisor": "Melampe001"
   },
   {
     "type": "agent_activated",
-    "timestamp": "2025-12-21T11:31:42.663893Z",
+    "timestamp": "2025-12-21T11:36:59.033006Z",
     "workspace": "/home/runner/work/TE-explico/TE-explico",
     "supervisor": "Melampe001",
-    "activated_at": "2025-12-21T11:31:42.663826Z"
+    "activated_at": "2025-12-21T11:36:59.032942Z"
   },
   {
     "type": "artifact_created",
-    "timestamp": "2025-12-21T11:31:42.665831Z",
+    "timestamp": "2025-12-21T11:36:59.034949Z",
     "filename": "test_audit.png",
     "hash": "3a942e13fddf9531678d6771a2d4993f6e18f5dcbbd498586444180122838de9",
     "creator": "TestCreator",
-    "created_at": "2025-12-21T11:31:42.665762Z",
+    "created_at": "2025-12-21T11:36:59.034880Z",
     "version": 1,
     "status": "active",
     "supervisor": "Melampe001"
   },
   {
     "type": "integrity_audit",
-    "timestamp": "2025-12-21T11:31:42.666642Z",
+    "timestamp": "2025-12-21T11:36:59.035861Z",
     "files_verified": 2,
     "anomalies": 2,
     "details": "Verified 2 files in /home/runner/work/TE-explico/TE-explico/designs/active",
@@ -145,47 +145,47 @@
   },
   {
     "type": "agent_activated",
-    "timestamp": "2025-12-21T11:31:42.667721Z",
+    "timestamp": "2025-12-21T11:36:59.036884Z",
     "workspace": "/home/runner/work/TE-explico/TE-explico",
     "supervisor": "Melampe001",
-    "activated_at": "2025-12-21T11:31:42.667653Z"
+    "activated_at": "2025-12-21T11:36:59.036814Z"
   },
   {
     "type": "agent_activated",
-    "timestamp": "2025-12-21T11:31:42.697927Z",
+    "timestamp": "2025-12-21T11:36:59.053674Z",
     "workspace": "/home/runner/work/TE-explico/TE-explico",
     "supervisor": "Melampe001",
-    "activated_at": "2025-12-21T11:31:42.697858Z"
+    "activated_at": "2025-12-21T11:36:59.053598Z"
   },
   {
     "type": "artifact_created",
-    "timestamp": "2025-12-21T11:31:42.699438Z",
+    "timestamp": "2025-12-21T11:36:59.055197Z",
     "filename": "test_artifact_1.png",
     "hash": "7a0e342f9e49390664a88b00bbb8370bf3084a231ab210c8ad972c2a5db20251",
     "creator": "TestCreator",
-    "created_at": "2025-12-21T11:31:42.699364Z",
+    "created_at": "2025-12-21T11:36:59.055106Z",
     "version": 1,
     "status": "active",
     "supervisor": "Melampe001"
   },
   {
     "type": "artifact_created",
-    "timestamp": "2025-12-21T11:31:42.700869Z",
+    "timestamp": "2025-12-21T11:36:59.056752Z",
     "filename": "test_artifact_2.png",
     "hash": "3a942e13fddf9531678d6771a2d4993f6e18f5dcbbd498586444180122838de9",
     "creator": "TestCreator",
-    "created_at": "2025-12-21T11:31:42.700793Z",
+    "created_at": "2025-12-21T11:36:59.056674Z",
     "version": 1,
     "status": "active",
     "supervisor": "Melampe001"
   },
   {
     "type": "artifact_modified",
-    "timestamp": "2025-12-21T11:31:42.701997Z",
+    "timestamp": "2025-12-21T11:36:59.057841Z",
     "filename": "test_artifact_2.png",
-    "hash": "d115bf4b9c55b06a318418965381fa07172bb56a6baa962ac800a62561cf11f5",
+    "hash": "70c26dc5e66f7af3d388d060c936da6054a1cca804bae79f8e66e482c3555d1d",
     "modifier": "TestModifier",
-    "modified_at": "2025-12-21T11:31:42.701921Z",
+    "modified_at": "2025-12-21T11:36:59.057766Z",
     "description": "Changed color",
     "previous_hash": "3a942e13fddf9531678d6771a2d4993f6e18f5dcbbd498586444180122838de9",
     "version": 2,
@@ -193,7 +193,7 @@
   },
   {
     "type": "integrity_audit",
-    "timestamp": "2025-12-21T11:31:42.703411Z",
+    "timestamp": "2025-12-21T11:36:59.059189Z",
     "files_verified": 7,
     "anomalies": 4,
     "details": "Verified 7 files in /home/runner/work/TE-explico/TE-explico/designs/active",
@@ -201,47 +201,47 @@
   },
   {
     "type": "agent_activated",
-    "timestamp": "2025-12-21T11:31:42.705128Z",
+    "timestamp": "2025-12-21T11:36:59.060898Z",
     "workspace": "/home/runner/work/TE-explico/TE-explico",
     "supervisor": "Melampe001",
-    "activated_at": "2025-12-21T11:31:42.705052Z"
+    "activated_at": "2025-12-21T11:36:59.060822Z"
   },
   {
     "type": "artifact_created",
-    "timestamp": "2025-12-21T11:31:42.706285Z",
+    "timestamp": "2025-12-21T11:36:59.062012Z",
     "filename": "incident_test.png",
     "hash": "8459bb03cb5f06cb83b13fdfb7d69419bdafcaed7b68ddd3968f0ed8af75c3d8",
     "creator": "TestCreator",
-    "created_at": "2025-12-21T11:31:42.706187Z",
+    "created_at": "2025-12-21T11:36:59.061934Z",
     "version": 1,
     "status": "active",
     "supervisor": "Melampe001"
   },
   {
     "type": "agent_activated",
-    "timestamp": "2025-12-21T11:31:42.707873Z",
+    "timestamp": "2025-12-21T11:36:59.063576Z",
     "workspace": "/home/runner/work/TE-explico/TE-explico",
     "supervisor": "Melampe001",
-    "activated_at": "2025-12-21T11:31:42.707795Z"
+    "activated_at": "2025-12-21T11:36:59.063498Z"
   },
   {
     "type": "artifact_created",
-    "timestamp": "2025-12-21T11:31:42.709517Z",
+    "timestamp": "2025-12-21T11:36:59.065112Z",
     "filename": "versioned_artifact.png",
     "hash": "a565778431fbd2bfb89bb5f151ba3c854fe7416286af99d55afa3fb0457fde1b",
     "creator": "Designer1",
-    "created_at": "2025-12-21T11:31:42.709434Z",
+    "created_at": "2025-12-21T11:36:59.065031Z",
     "version": 1,
     "status": "active",
     "supervisor": "Melampe001"
   },
   {
     "type": "artifact_modified",
-    "timestamp": "2025-12-21T11:31:42.710704Z",
+    "timestamp": "2025-12-21T11:36:59.066320Z",
     "filename": "versioned_artifact.png",
-    "hash": "8335fe7057f4dca88e6c271aa30bdaf0806fa91bc8819076b068d59b4f615cbb",
+    "hash": "112e4f5000fc93e8524709a3cc28fadb257fd3f30cb18d7cdb1ad585e05a1689",
     "modifier": "Designer2",
-    "modified_at": "2025-12-21T11:31:42.710605Z",
+    "modified_at": "2025-12-21T11:36:59.066238Z",
     "description": "Modification 1",
     "previous_hash": "a565778431fbd2bfb89bb5f151ba3c854fe7416286af99d55afa3fb0457fde1b",
     "version": 2,
@@ -249,274 +249,33 @@
   },
   {
     "type": "artifact_modified",
-    "timestamp": "2025-12-21T11:31:42.711872Z",
+    "timestamp": "2025-12-21T11:36:59.067466Z",
     "filename": "versioned_artifact.png",
-    "hash": "d3f9494eec614ae716f43a3e7407494c31ce2fedf7c50300ef898bfc87ca1c02",
+    "hash": "d89a9e3d02b86de9657099453477b3a02c6c0f89c222f94fc0bc5247130ad9f8",
     "modifier": "Designer3",
-    "modified_at": "2025-12-21T11:31:42.711774Z",
+    "modified_at": "2025-12-21T11:36:59.067383Z",
     "description": "Modification 2",
-    "previous_hash": "8335fe7057f4dca88e6c271aa30bdaf0806fa91bc8819076b068d59b4f615cbb",
+    "previous_hash": "112e4f5000fc93e8524709a3cc28fadb257fd3f30cb18d7cdb1ad585e05a1689",
     "version": 3,
     "supervisor": "Melampe001"
   },
   {
     "type": "artifact_modified",
-    "timestamp": "2025-12-21T11:31:42.713060Z",
+    "timestamp": "2025-12-21T11:36:59.068748Z",
     "filename": "versioned_artifact.png",
-    "hash": "15980362bb8313ce4432719ede260d37df5206aac072938867ecb7bff270f35c",
+    "hash": "85809bac23c72a55e3d2adbda8327f909a62480881673201b67e768531d9c166",
     "modifier": "Designer4",
-    "modified_at": "2025-12-21T11:31:42.712977Z",
+    "modified_at": "2025-12-21T11:36:59.068654Z",
     "description": "Modification 3",
-    "previous_hash": "d3f9494eec614ae716f43a3e7407494c31ce2fedf7c50300ef898bfc87ca1c02",
+    "previous_hash": "d89a9e3d02b86de9657099453477b3a02c6c0f89c222f94fc0bc5247130ad9f8",
     "version": 4,
     "supervisor": "Melampe001"
   },
   {
     "type": "agent_activated",
-    "timestamp": "2025-12-21T11:31:42.714529Z",
+    "timestamp": "2025-12-21T11:36:59.070103Z",
     "workspace": "/home/runner/work/TE-explico/TE-explico",
     "supervisor": "Melampe001",
-    "activated_at": "2025-12-21T11:31:42.714443Z"
-  },
-  {
-    "type": "agent_activated",
-    "timestamp": "2025-12-21T11:32:19.470579Z",
-    "workspace": "/home/runner/work/TE-explico/TE-explico",
-    "supervisor": "Melampe001",
-    "activated_at": "2025-12-21T11:32:19.470474Z"
-  },
-  {
-    "type": "agent_activated",
-    "timestamp": "2025-12-21T11:32:19.472265Z",
-    "workspace": "/home/runner/work/TE-explico/TE-explico",
-    "supervisor": "Melampe001",
-    "activated_at": "2025-12-21T11:32:19.472139Z"
-  },
-  {
-    "type": "artifact_created",
-    "timestamp": "2025-12-21T11:32:19.478209Z",
-    "filename": "test_image.png",
-    "hash": "7a0e342f9e49390664a88b00bbb8370bf3084a231ab210c8ad972c2a5db20251",
-    "creator": "TestCreator",
-    "created_at": "2025-12-21T11:32:19.478098Z",
-    "version": 1,
-    "status": "active",
-    "supervisor": "Melampe001"
-  },
-  {
-    "type": "agent_activated",
-    "timestamp": "2025-12-21T11:32:19.479517Z",
-    "workspace": "/home/runner/work/TE-explico/TE-explico",
-    "supervisor": "Melampe001",
-    "activated_at": "2025-12-21T11:32:19.479424Z"
-  },
-  {
-    "type": "agent_activated",
-    "timestamp": "2025-12-21T11:32:19.480954Z",
-    "workspace": "/home/runner/work/TE-explico/TE-explico",
-    "supervisor": "Melampe001",
-    "activated_at": "2025-12-21T11:32:19.480862Z"
-  },
-  {
-    "type": "artifact_created",
-    "timestamp": "2025-12-21T11:32:19.483094Z",
-    "filename": "test_image.png",
-    "hash": "7a0e342f9e49390664a88b00bbb8370bf3084a231ab210c8ad972c2a5db20251",
-    "creator": "TestCreator",
-    "created_at": "2025-12-21T11:32:19.482999Z",
-    "version": 1,
-    "status": "active",
-    "supervisor": "Melampe001"
-  },
-  {
-    "type": "artifact_modified",
-    "timestamp": "2025-12-21T11:32:19.484367Z",
-    "filename": "test_image.png",
-    "hash": "393804fb915e50a5dcc2c19f4a69479443faa363db4a5ad5e2daf5f01531beb0",
-    "modifier": "TestModifier",
-    "modified_at": "2025-12-21T11:32:19.484273Z",
-    "description": "Updated colors",
-    "previous_hash": "7a0e342f9e49390664a88b00bbb8370bf3084a231ab210c8ad972c2a5db20251",
-    "version": 2,
-    "supervisor": "Melampe001"
-  },
-  {
-    "type": "agent_activated",
-    "timestamp": "2025-12-21T11:32:19.485691Z",
-    "workspace": "/home/runner/work/TE-explico/TE-explico",
-    "supervisor": "Melampe001",
-    "activated_at": "2025-12-21T11:32:19.485596Z"
-  },
-  {
-    "type": "artifact_created",
-    "timestamp": "2025-12-21T11:32:19.487873Z",
-    "filename": "test_image.png",
-    "hash": "7a0e342f9e49390664a88b00bbb8370bf3084a231ab210c8ad972c2a5db20251",
-    "creator": "TestCreator",
-    "created_at": "2025-12-21T11:32:19.487679Z",
-    "version": 1,
-    "status": "active",
-    "supervisor": "Melampe001"
-  },
-  {
-    "type": "agent_activated",
-    "timestamp": "2025-12-21T11:32:19.489626Z",
-    "workspace": "/home/runner/work/TE-explico/TE-explico",
-    "supervisor": "Melampe001",
-    "activated_at": "2025-12-21T11:32:19.489528Z"
-  },
-  {
-    "type": "artifact_created",
-    "timestamp": "2025-12-21T11:32:19.492554Z",
-    "filename": "test_audit.png",
-    "hash": "3a942e13fddf9531678d6771a2d4993f6e18f5dcbbd498586444180122838de9",
-    "creator": "TestCreator",
-    "created_at": "2025-12-21T11:32:19.492455Z",
-    "version": 1,
-    "status": "active",
-    "supervisor": "Melampe001"
-  },
-  {
-    "type": "integrity_audit",
-    "timestamp": "2025-12-21T11:32:19.494325Z",
-    "files_verified": 8,
-    "anomalies": 5,
-    "details": "Verified 8 files in /home/runner/work/TE-explico/TE-explico/designs/active",
-    "supervisor": "Melampe001"
-  },
-  {
-    "type": "agent_activated",
-    "timestamp": "2025-12-21T11:32:19.495598Z",
-    "workspace": "/home/runner/work/TE-explico/TE-explico",
-    "supervisor": "Melampe001",
-    "activated_at": "2025-12-21T11:32:19.495495Z"
-  },
-  {
-    "type": "agent_activated",
-    "timestamp": "2025-12-21T11:32:19.513728Z",
-    "workspace": "/home/runner/work/TE-explico/TE-explico",
-    "supervisor": "Melampe001",
-    "activated_at": "2025-12-21T11:32:19.513630Z"
-  },
-  {
-    "type": "artifact_created",
-    "timestamp": "2025-12-21T11:32:19.515452Z",
-    "filename": "test_artifact_1.png",
-    "hash": "7a0e342f9e49390664a88b00bbb8370bf3084a231ab210c8ad972c2a5db20251",
-    "creator": "TestCreator",
-    "created_at": "2025-12-21T11:32:19.515350Z",
-    "version": 1,
-    "status": "active",
-    "supervisor": "Melampe001"
-  },
-  {
-    "type": "artifact_created",
-    "timestamp": "2025-12-21T11:32:19.517111Z",
-    "filename": "test_artifact_2.png",
-    "hash": "3a942e13fddf9531678d6771a2d4993f6e18f5dcbbd498586444180122838de9",
-    "creator": "TestCreator",
-    "created_at": "2025-12-21T11:32:19.517009Z",
-    "version": 1,
-    "status": "active",
-    "supervisor": "Melampe001"
-  },
-  {
-    "type": "artifact_modified",
-    "timestamp": "2025-12-21T11:32:19.518394Z",
-    "filename": "test_artifact_2.png",
-    "hash": "b680064f5fc3aff0c44e875d9caf300049c5fab9758f97f694956a3de6ec80bd",
-    "modifier": "TestModifier",
-    "modified_at": "2025-12-21T11:32:19.518290Z",
-    "description": "Changed color",
-    "previous_hash": "3a942e13fddf9531678d6771a2d4993f6e18f5dcbbd498586444180122838de9",
-    "version": 2,
-    "supervisor": "Melampe001"
-  },
-  {
-    "type": "integrity_audit",
-    "timestamp": "2025-12-21T11:32:19.520038Z",
-    "files_verified": 8,
-    "anomalies": 5,
-    "details": "Verified 8 files in /home/runner/work/TE-explico/TE-explico/designs/active",
-    "supervisor": "Melampe001"
-  },
-  {
-    "type": "agent_activated",
-    "timestamp": "2025-12-21T11:32:19.522136Z",
-    "workspace": "/home/runner/work/TE-explico/TE-explico",
-    "supervisor": "Melampe001",
-    "activated_at": "2025-12-21T11:32:19.522031Z"
-  },
-  {
-    "type": "artifact_created",
-    "timestamp": "2025-12-21T11:32:19.523490Z",
-    "filename": "incident_test.png",
-    "hash": "8459bb03cb5f06cb83b13fdfb7d69419bdafcaed7b68ddd3968f0ed8af75c3d8",
-    "creator": "TestCreator",
-    "created_at": "2025-12-21T11:32:19.523381Z",
-    "version": 1,
-    "status": "active",
-    "supervisor": "Melampe001"
-  },
-  {
-    "type": "agent_activated",
-    "timestamp": "2025-12-21T11:32:19.525462Z",
-    "workspace": "/home/runner/work/TE-explico/TE-explico",
-    "supervisor": "Melampe001",
-    "activated_at": "2025-12-21T11:32:19.525344Z"
-  },
-  {
-    "type": "artifact_created",
-    "timestamp": "2025-12-21T11:32:19.527254Z",
-    "filename": "versioned_artifact.png",
-    "hash": "a565778431fbd2bfb89bb5f151ba3c854fe7416286af99d55afa3fb0457fde1b",
-    "creator": "Designer1",
-    "created_at": "2025-12-21T11:32:19.527126Z",
-    "version": 1,
-    "status": "active",
-    "supervisor": "Melampe001"
-  },
-  {
-    "type": "artifact_modified",
-    "timestamp": "2025-12-21T11:32:19.528595Z",
-    "filename": "versioned_artifact.png",
-    "hash": "9fc10a9c0e270781d142a257ea05c36a58b1e916f1b9eb08e3b0400a58613320",
-    "modifier": "Designer2",
-    "modified_at": "2025-12-21T11:32:19.528483Z",
-    "description": "Modification 1",
-    "previous_hash": "a565778431fbd2bfb89bb5f151ba3c854fe7416286af99d55afa3fb0457fde1b",
-    "version": 2,
-    "supervisor": "Melampe001"
-  },
-  {
-    "type": "artifact_modified",
-    "timestamp": "2025-12-21T11:32:19.529980Z",
-    "filename": "versioned_artifact.png",
-    "hash": "cb9205022efb79fc1d44e6c12a256f7387b17d33cfce0ae6c6561a6f30631bf1",
-    "modifier": "Designer3",
-    "modified_at": "2025-12-21T11:32:19.529866Z",
-    "description": "Modification 2",
-    "previous_hash": "9fc10a9c0e270781d142a257ea05c36a58b1e916f1b9eb08e3b0400a58613320",
-    "version": 3,
-    "supervisor": "Melampe001"
-  },
-  {
-    "type": "artifact_modified",
-    "timestamp": "2025-12-21T11:32:19.531424Z",
-    "filename": "versioned_artifact.png",
-    "hash": "5cb6692f77f6284fa5756dfc98fa0c279c604df5587c33c8993be700638c0baf",
-    "modifier": "Designer4",
-    "modified_at": "2025-12-21T11:32:19.531308Z",
-    "description": "Modification 3",
-    "previous_hash": "cb9205022efb79fc1d44e6c12a256f7387b17d33cfce0ae6c6561a6f30631bf1",
-    "version": 4,
-    "supervisor": "Melampe001"
-  },
-  {
-    "type": "agent_activated",
-    "timestamp": "2025-12-21T11:32:19.533110Z",
-    "workspace": "/home/runner/work/TE-explico/TE-explico",
-    "supervisor": "Melampe001",
-    "activated_at": "2025-12-21T11:32:19.532983Z"
+    "activated_at": "2025-12-21T11:36:59.070012Z"
   }
 ]

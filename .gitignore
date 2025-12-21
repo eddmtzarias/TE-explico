@@ -44,11 +44,21 @@ htmlcov/
 *~
 .DS_Store
 
-# Logs (keep structure but ignore content in production)
-# logs/*.json (commented - we want to track these for demo)
+# Design artifacts from tests (exclude test-generated files)
+designs/active/test_*.png
+designs/active/versioned_*.png
+designs/quarantine/test_*.png
+designs/quarantine/incident_*.png
 
-# Reports (keep for demo, but could ignore in production)
-# reports/*.md
+# Keep the simulation demo files
+!designs/active/logo_emulador.png
+!designs/quarantine/logo_emulador_v2.png
+
+# Logs (keep for demo)
+# Note: In production, you might want to exclude these
+
+# Reports (keep for demo)
+# Note: In production, you might want to exclude these
 
 # Temporary files
 *.tmp
