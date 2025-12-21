@@ -1,0 +1,80 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.venv
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.hypothesis/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Design artifacts from tests (exclude test-generated files)
+designs/active/test_*.png
+designs/active/versioned_*.png
+designs/quarantine/test_*.png
+designs/quarantine/incident_*.png
+
+# Keep the simulation demo files
+!designs/active/logo_emulador.png
+!designs/quarantine/logo_emulador_v2.png
+
+# Logs (keep for demo)
+# Note: In production, you might want to exclude these
+
+# Reports (keep for demo)
+# Note: In production, you might want to exclude these
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Type checking
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# Security scan results
+bandit-report.json

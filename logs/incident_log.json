@@ -1,0 +1,74 @@
+[
+  {
+    "type": "unauthorized_access",
+    "filename": "logo_emulador_v2.png",
+    "suspicious_actor": "sim_agenteX",
+    "description": "Acceso no autorizado detectado. Archivo movido a cuarentena.",
+    "severity": "HIGH",
+    "timestamp": "2025-12-21T11:36:44.197257Z",
+    "supervisor": "Melampe001"
+  },
+  {
+    "type": "unauthorized_access",
+    "filename": "test_image.png",
+    "suspicious_actor": "BadActor",
+    "description": "Acceso no autorizado detectado. Archivo movido a cuarentena.",
+    "severity": "HIGH",
+    "timestamp": "2025-12-21T11:36:59.031898Z",
+    "supervisor": "Melampe001"
+  },
+  {
+    "type": "unauthorized_access",
+    "filename": "incident_test.png",
+    "suspicious_actor": "MaliciousActor",
+    "description": "Acceso no autorizado detectado. Archivo movido a cuarentena.",
+    "severity": "HIGH",
+    "timestamp": "2025-12-21T11:36:59.062402Z",
+    "supervisor": "Melampe001"
+  },
+  {
+    "type": "unauthorized_access",
+    "filename": "test_image.png",
+    "suspicious_actor": "BadActor",
+    "description": "Acceso no autorizado detectado. Archivo movido a cuarentena.",
+    "severity": "HIGH",
+    "timestamp": "2025-12-21T11:39:19.181765Z",
+    "supervisor": "Melampe001"
+  },
+  {
+    "type": "unauthorized_access",
+    "filename": "incident_test.png",
+    "suspicious_actor": "MaliciousActor",
+    "description": "Acceso no autorizado detectado. Archivo movido a cuarentena.",
+    "severity": "HIGH",
+    "timestamp": "2025-12-21T11:39:19.214919Z",
+    "supervisor": "Melampe001"
+  },
+  {
+    "type": "unauthorized_access",
+    "filename": "test_image.png",
+    "suspicious_actor": "BadActor",
+    "description": "Acceso no autorizado detectado. Archivo movido a cuarentena.",
+    "severity": "HIGH",
+    "timestamp": "2025-12-21T11:40:18.273003Z",
+    "supervisor": "Melampe001"
+  },
+  {
+    "type": "unauthorized_access",
+    "filename": "incident_test.png",
+    "suspicious_actor": "MaliciousActor",
+    "description": "Acceso no autorizado detectado. Archivo movido a cuarentena.",
+    "severity": "HIGH",
+    "timestamp": "2025-12-21T11:40:18.308810Z",
+    "supervisor": "Melampe001"
+  },
+  {
+    "type": "unauthorized_access",
+    "filename": "logo_emulador_v2.png",
+    "suspicious_actor": "sim_agenteX",
+    "description": "Acceso no autorizado detectado. Archivo movido a cuarentena.",
+    "severity": "HIGH",
+    "timestamp": "2025-12-21T11:40:18.451278Z",
+    "supervisor": "Melampe001"
+  }
+]
