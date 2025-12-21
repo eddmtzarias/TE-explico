@@ -1,5 +1,86 @@
 # TE-explico [SISTEMA TOKRAGGCORP — ORDEN SUPREMA DE INGENIERÍA 2025]
 
+## 🎯 Sistema de Guía Inteligente para Desarrollo Multi-Plataforma
+
+**OmniMaestro** es un sistema de IA pedagógica multiplataforma que analiza capturas de pantalla y proporciona explicaciones adaptativas. Este proyecto incluye un sistema de guía inteligente que te ayuda a seguir el roadmap de desarrollo paso a paso.
+
+### 🚀 Inicio Rápido con el Sistema de Guía
+
+```bash
+# Ver estado actual del proyecto
+python scripts/project_guide.py status
+
+# Ver siguiente paso recomendado
+python scripts/project_guide.py next
+
+# Validar que completaste el paso actual
+python scripts/project_guide.py validate
+
+# Ver roadmap completo
+python scripts/project_guide.py roadmap
+
+# Cambiar plataforma objetivo (desktop/mobile/web)
+python scripts/project_guide.py platform desktop
+
+# Explicación profunda de un paso específico
+python scripts/project_guide.py explain 7
+```
+
+### 📚 Documentación
+
+- **[PROJECT_ROADMAP.md](PROJECT_ROADMAP.md)** - Roadmap interactivo completo con 50 pasos
+- **[PROJECT_DASHBOARD.md](PROJECT_DASHBOARD.md)** - Dashboard de progreso auto-actualizado
+- **[docs/PLATFORM_GUIDES/](docs/PLATFORM_GUIDES/)** - Guías específicas por plataforma
+  - [DESKTOP_TAURI.md](docs/PLATFORM_GUIDES/DESKTOP_TAURI.md) - Desarrollo con Tauri
+  - [MOBILE_FLUTTER.md](docs/PLATFORM_GUIDES/MOBILE_FLUTTER.md) - Desarrollo con Flutter
+  - [WEB_PWA.md](docs/PLATFORM_GUIDES/WEB_PWA.md) - Desarrollo de PWA
+- **[docs/TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md)** - Solución a problemas comunes
+- **[EVOLUTION_LOG.md](EVOLUTION_LOG.md)** - Sistema de mejora continua
+
+### 💡 Ejemplo de Uso
+
+```bash
+$ python scripts/project_guide.py status
+
+📊 Estado del Proyecto OmniMaestro
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Plataforma Objetivo: Desktop
+Fase Actual: Setup Inicial
+
+Progreso General: ██████░░░░░░░░░░░░░░ 33%
+✅ Pasos Completados: 4/12
+
+⏳ Próximo Paso Recomendado:
+   #5 🚨 CRÍTICO - Configurar variables de entorno
+
+⚠️  Advertencias:
+   - Variables de entorno no configuradas (.env faltante)
+
+💡 Sugerencia: Ejecuta 'python scripts/project_guide.py next' para ver detalles
+```
+
+```bash
+$ python scripts/project_guide.py next
+
+🎯 Paso #5: Configurar variables de entorno
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Criticidad: 🚨 CRÍTICO
+Tiempo Estimado: 15 minutos
+Fase: Setup
+Dependencias: ✅ Completadas
+
+📖 Descripción:
+   Crear archivo .env con configuraciones necesarias
+
+✅ Validación:
+   python scripts/project_guide.py validate --step 5
+
+🔗 Recursos:
+   - docs/PLATFORM_GUIDES/
+```
+
+---
+
 ## PixARR Design Monitor
 
 Sistema de monitoreo e integridad de archivos de diseño implementado para detectar y corregir automáticamente anomalías en archivos de diseño.
@@ -76,6 +157,38 @@ Proceso:
 1. **Auto-Fix**: Intenta corregir anomalías automáticamente
 2. **Auditoría**: Verifica la integridad de todos los archivos
 3. **Falla si**: Quedan anomalías sin resolver después del auto-fix
+
+---
+
+## 🎨 Características del Sistema de Guía
+
+### Validación Automática
+- ✅ Detecta prerequisitos faltantes
+- ✅ Valida cada paso antes de continuar
+- ✅ Previene errores por pasos incompletos
+- ✅ Comandos de validación automática por paso
+
+### Advertencias Inteligentes
+- ❌ Detecta cuando intentas saltar pasos críticos
+- ⚠️ Alerta sobre dependencias faltantes
+- 🚨 Marca pasos bloqueados por dependencias
+- ℹ️ Recomendaciones contextuales
+
+### Seguimiento de Progreso
+- 📊 Dashboard auto-actualizado
+- 📈 Métricas por fase y criticidad
+- ⏱️ Estimaciones de tiempo restante
+- 📝 Estado persistente en `.project_state.json`
+
+### Multi-Plataforma
+- 🖥️ **Desktop (Tauri)** - Aplicación nativa Windows/macOS/Linux
+- 📱 **Mobile (Flutter)** - Android e iOS
+- 🌐 **Web (PWA)** - Progressive Web App
+
+### Git Integration
+- 🔗 Pre-commit hooks para validación automática
+- 📦 Prevención de commits de archivos sensibles
+- 🎯 Sugerencias de próximo paso después de cada commit
 
 ---
 
