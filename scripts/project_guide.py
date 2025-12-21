@@ -82,7 +82,7 @@ STEPS = {
         "phase": "setup",
         "criticality": "important",
         "time_minutes": 30,
-        "dependencies": [1, 3],
+        "dependencies": [1],
         "description": "GitHub Actions para automatización",
         "validation_commands": ["ls .github/workflows/"],
         "resources": [".github/workflows/"],
