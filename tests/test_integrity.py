@@ -124,20 +124,24 @@ def test_inject_and_validate_text_metadata(sample_file):
     assert retrieved["hash"] == "def456"
 
 
-def test_integrity_validator_verify_file(sample_image):
+def test_integrity_validator_verify_file(tmp_path):
     """Test integrity validator on a single file."""
-    # Inject metadata
-    file_hash = calculate_file_hash(sample_image)
+    # Create a text file (easier to test as metadata doesn't change the file)
+    test_file = tmp_path / "test_file.txt"
+    test_file.write_text("Test content")
+    
+    # Calculate hash and inject metadata
+    file_hash = calculate_file_hash(str(test_file))
     metadata = {
-        "filename": "test_image.png",
+        "filename": "test_file.txt",
         "hash": file_hash,
         "creator": "TestUser",
     }
-    inject_metadata(sample_image, metadata)
+    inject_metadata(str(test_file), metadata)
     
     # Validate
     validator = IntegrityValidator()
-    result = validator.verify_file(sample_image)
+    result = validator.verify_file(str(test_file))
     
     assert result["valid"] is True
     assert result["status"] == "OK"
