@@ -1,0 +1,145 @@
+{
+  "version": "1.0.0",
+  "current_phase": "setup",
+  "current_phase_name": "Setup Inicial",
+  "current_step": 5,
+  "platform_target": "desktop",
+  "completed_steps": [1, 2, 3, 4],
+  "skipped_warnings": [],
+  "in_progress_steps": [],
+  "blocked_steps": [],
+  "last_updated": "2025-12-21T19:06:00Z",
+  "last_step_completed": {
+    "step_number": 4,
+    "name": "Configurar CI/CD básico",
+    "completed_at": "2025-12-21T19:06:00Z"
+  },
+  "blockers": [],
+  "warnings": [
+    {
+      "type": "configuration",
+      "severity": "high",
+      "message": "Variables de entorno no configuradas (.env faltante)",
+      "step_required": 5,
+      "created_at": "2025-12-21T19:06:00Z"
+    },
+    {
+      "type": "documentation",
+      "severity": "medium",
+      "message": "Arquitectura no documentada (docs/ARCHITECTURE.md)",
+      "step_required": 6,
+      "created_at": "2025-12-21T19:06:00Z"
+    }
+  ],
+  "statistics": {
+    "total_steps": 50,
+    "completed_count": 4,
+    "pending_count": 46,
+    "progress_percentage": 8,
+    "steps_by_criticality": {
+      "critical": {
+        "total": 29,
+        "completed": 3,
+        "pending": 26
+      },
+      "important": {
+        "total": 13,
+        "completed": 1,
+        "pending": 12
+      },
+      "optional": {
+        "total": 4,
+        "completed": 0,
+        "pending": 4
+      }
+    },
+    "steps_by_phase": {
+      "setup": {
+        "total": 6,
+        "completed": 4,
+        "pending": 2,
+        "progress_percentage": 67
+      },
+      "core_backend": {
+        "total": 4,
+        "completed": 0,
+        "pending": 4,
+        "progress_percentage": 0
+      },
+      "desktop": {
+        "total": 8,
+        "completed": 0,
+        "pending": 8,
+        "progress_percentage": 0
+      },
+      "mobile": {
+        "total": 8,
+        "completed": 0,
+        "pending": 8,
+        "progress_percentage": 0
+      },
+      "web": {
+        "total": 6,
+        "completed": 0,
+        "pending": 6,
+        "progress_percentage": 0
+      },
+      "integrations": {
+        "total": 4,
+        "completed": 0,
+        "pending": 4,
+        "progress_percentage": 0
+      },
+      "testing": {
+        "total": 7,
+        "completed": 0,
+        "pending": 7,
+        "progress_percentage": 0
+      },
+      "deployment": {
+        "total": 7,
+        "completed": 0,
+        "pending": 7,
+        "progress_percentage": 0
+      }
+    }
+  },
+  "time_estimates": {
+    "desktop_mvp_weeks": "2-3",
+    "mobile_additional_weeks": "3-4",
+    "web_additional_weeks": "2-3",
+    "total_weeks": "12-16",
+    "current_velocity_steps_per_week": 4,
+    "projected_completion_weeks": 12
+  },
+  "next_recommended_steps": [
+    {
+      "step_number": 5,
+      "name": "Configurar variables de entorno",
+      "criticality": "critical",
+      "estimated_time_minutes": 15,
+      "dependencies_met": true
+    },
+    {
+      "step_number": 6,
+      "name": "Documentar arquitectura base",
+      "criticality": "important",
+      "estimated_time_minutes": 60,
+      "dependencies_met": true
+    },
+    {
+      "step_number": 7,
+      "name": "Integrar Tesseract OCR",
+      "criticality": "critical",
+      "estimated_time_minutes": 120,
+      "dependencies_met": false,
+      "blocking_dependencies": [5]
+    }
+  ],
+  "metadata": {
+    "project_name": "OmniMaestro",
+    "repository": "eddmtzarias/TE-explico",
+    "created_at": "2025-12-21T19:06:00Z",
+    "guide_version": "1.0.0"
+  }
+}
