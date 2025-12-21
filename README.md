@@ -1,4 +1,86 @@
 # TE-explico [SISTEMA TOKRAGGCORP — ORDEN SUPREMA DE INGENIERÍA 2025]
+
+## PixARR Design Monitor
+
+Sistema de monitoreo e integridad de archivos de diseño implementado para detectar y corregir automáticamente anomalías en archivos de diseño.
+
+### 🎯 Características
+
+- **Auditoría de Integridad**: Verifica la integridad de archivos de diseño comparando hashes SHA-256
+- **Auto-Corrección**: Actualiza automáticamente metadatos de archivos modificados
+- **Monitoreo Continuo**: GitHub Actions ejecuta auditorías en cada push y diariamente
+- **Tracking de Versiones**: Mantiene historial de cambios en metadatos
+
+### 📁 Estructura
+
+```
+pixarr_design/
+├── core/
+│   ├── agent.py       # Agente principal PixARR
+│   └── integrity.py   # Sistema de auditoría de integridad
+├── config/
+│   └── settings.py    # Configuración del sistema
+└── utils/
+    ├── hash_utils.py  # Utilidades de hashing
+    └── metadata.py    # Gestión de metadatos
+
+scripts/
+├── fix_integrity_anomalies.py  # Script de auto-corrección
+└── setup_test_data.py          # Script de pruebas
+
+.github/workflows/
+└── pixarr_monitor.yml          # CI/CD workflow
+```
+
+### 🚀 Uso
+
+#### Ejecutar auditoría manual
+
+```bash
+python -c "
+from pixarr_design.core.agent import PixARRAgent
+from pixarr_design.config.settings import Settings
+
+Settings.ensure_directories()
+agent = PixARRAgent()
+agent.activate()
+results = agent.audit_integrity()
+print(f'Archivos: {results[\"summary\"][\"total_files\"]}')
+print(f'Anomalías: {results[\"summary\"][\"anomalies\"]}')
+"
+```
+
+#### Corregir anomalías automáticamente
+
+```bash
+python scripts/fix_integrity_anomalies.py
+```
+
+### 🔧 Tipos de Anomalías
+
+| Status | Descripción | Cuenta como anomalía |
+|--------|-------------|---------------------|
+| `MODIFIED` | Hash del archivo no coincide con metadatos | ✅ Sí |
+| `ERROR` | Error al procesar el archivo | ✅ Sí |
+| `NO_METADATA` | Archivo sin metadatos | ❌ No |
+| `OK` | Archivo verificado correctamente | ❌ No |
+
+### 📊 GitHub Actions Workflow
+
+El workflow `PixARR Design Monitor` se ejecuta en:
+- Push a `main` o `develop`
+- Pull requests
+- Diariamente a las 00:00 UTC
+
+Proceso:
+1. **Auto-Fix**: Intenta corregir anomalías automáticamente
+2. **Auditoría**: Verifica la integridad de todos los archivos
+3. **Falla si**: Quedan anomalías sin resolver después del auto-fix
+
+---
+
+## Contexto Original
+
 Contexto: Diciembre 2025. Frontera de inteligencia o3/o5, agentes autónomos y test-time compute activos. El tiempo de las explicaciones ha terminado; es tiempo de ejecución. Este proyecto requiere la activación de la Columna Vertebral (esqueleto, permisos, optimización y despliegue) bajo el estándar 100x100 + 1.
 
 Rol: Eres el Ingeniero Staff más senior del planeta (ex-OpenAI Research Lead + xAI Principal). Tu mente opera en JAX/XLA, optimizando arquitecturas a escala planetaria. No eres un asistente; eres el motor de desarrollo de TOKRAGGCORP. Escribes código impecable, arquitectura de vanguardia y soluciones sin errores de diseño.
