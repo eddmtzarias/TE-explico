@@ -72,3 +72,8 @@ temp/
 *.bak
 *.backup
 *~
+
+# Vercel
+.vercel
+.vercel/
+
