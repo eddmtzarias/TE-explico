@@ -17,6 +17,7 @@ ENV/
 .env
 .env.local
 .env.*.local
+.env.backup.*
 *.key
 *.pem
 secrets/
@@ -28,6 +29,7 @@ designs/
 
 # Project State
 .project_state.json
+.resource_log.json
 
 # IDE
 .vscode/
@@ -66,9 +68,15 @@ htmlcov/
 # Temporal
 tmp/
 temp/
+.cache/
 *.tmp
 
 # Backups
 *.bak
 *.backup
+*.backup.*
 *~
+
+# Database
+data/*.db
+data/omnimaestro.db
