@@ -5,11 +5,6 @@ Genera explicaciones pedagógicas de texto
 from http.server import BaseHTTPRequestHandler
 import json
 import os
-import sys
-from pathlib import Path
-
-# Agregar path del proyecto
-sys.path.insert(0, str(Path(__file__).parent.parent))
 
 # Import solo lo necesario (sin OCR para reducir bundle)
 try:
@@ -40,7 +35,16 @@ class handler(BaseHTTPRequestHandler):
             user_level = data.get('user_level', 'beginner')
             
             if not text:
-                self.send_error(400, "Missing 'text' parameter")
+                # Send JSON error response
+                self.send_response(400)
+                self.send_header('Content-Type', 'application/json')
+                self.send_header('Access-Control-Allow-Origin', '*')
+                self.end_headers()
+                error_response = {
+                    'error': "Missing 'text' parameter",
+                    'status': 'error'
+                }
+                self.wfile.write(json.dumps(error_response).encode('utf-8'))
                 return
             
             # Generate explanation
