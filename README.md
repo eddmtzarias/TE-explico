@@ -176,3 +176,86 @@ Restricciones:
 No modifiques ni afectes el rendimiento del programa base.
 
 Prioriza siempre la claridad sobre la brevedad si el usuario expresa confusión.
+
+---
+
+## 🌐 Web Deployment (Vercel)
+
+### Deploy con un click:
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/eddmtzarias/TE-explico)
+
+### Deploy manual:
+
+```bash
+# Instalar Vercel CLI
+npm i -g vercel
+
+# Login
+vercel login
+
+# Deploy
+cd D:\Proyectos\TE-explico
+vercel
+
+# Configurar variables de entorno en Vercel Dashboard:
+# OPENAI_API_KEY=sk-proj-...
+```
+
+### Endpoints disponibles:
+
+- **POST /api/explain** - Genera explicaciones pedagógicas
+  ```json
+  {
+    "text": "¿Qué es un fork en Git?",
+    "context": "Usuario usando GitHub",
+    "user_level": "beginner"
+  }
+  ```
+
+- **GET /api/health** - Health check
+  ```json
+  {
+    "status": "healthy",
+    "service": "OmniMaestro API"
+  }
+  ```
+
+### Arquitectura:
+
+```
+Desktop (Local)          Web (Vercel)
+┌─────────────┐         ┌──────────────┐
+│ Flet UI     │         │ Static HTML  │
+│ + OCR       │         │ (PWA)        │
+│ + Full AI   │         └──────┬───────┘
+└─────────────┘                │
+                               │
+                        ┌──────▼───────┐
+                        │ /api/explain │
+                        │ (Serverless) │
+                        └──────────────┘
+```
+
+### Diferencias Desktop vs Web:
+
+| Feature | Desktop | Web (Vercel) |
+|---------|---------|--------------|
+| **OCR** | ✅ Full Tesseract | ❌ No disponible |
+| **Screenshots** | ✅ Captura local | ❌ No disponible |
+| **AI Explain** | ✅ OpenAI/Anthropic | ✅ OpenAI only |
+| **Bundle Size** | ~50MB | ~15MB |
+| **Offline** | ✅ Sí | ❌ Requiere internet |
+| **Latency** | <100ms | ~2-4s (API calls) |
+
+La versión Web es ideal para:
+- ✅ Acceso desde cualquier dispositivo
+- ✅ Sin instalación
+- ✅ Explicaciones de texto rápido
+- ✅ Compartir con equipo
+
+La versión Desktop es ideal para:
+- ✅ OCR de capturas de pantalla
+- ✅ Hotkeys globales
+- ✅ Procesamiento offline
+- ✅ Máximo rendimiento

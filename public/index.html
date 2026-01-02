@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OmniMaestro - Copiloto de Aprendizaje</title>
+    <meta name="description" content="IA pedagógica que explica software de forma adaptativa">
+    <link rel="manifest" href="/manifest.json">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            max-width: 600px;
+            width: 100%;
+            padding: 40px;
+        }
+        
+        h1 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 2rem;
+        }
+        
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+        }
+        
+        textarea {
+            width: 100%;
+            min-height: 120px;
+            padding: 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 16px;
+            font-family: inherit;
+            resize: vertical;
+            transition: border-color 0.3s;
+        }
+        
+        textarea:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 15px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
+        }
+        
+        button:active {
+            transform: translateY(0);
+        }
+        
+        button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .result {
+            margin-top: 30px;
+            padding: 20px;
+            background: #f5f5f5;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+            display: none;
+        }
+        
+        .result.show {
+            display: block;
+            animation: fadeIn 0.3s;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .error {
+            color: #e74c3c;
+            margin-top: 10px;
+            display: none;
+        }
+        
+        .error.show {
+            display: block;
+        }
+        
+        .status {
+            color: #27ae60;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🤖 OmniMaestro</h1>
+        <p class="subtitle">Copiloto de Aprendizaje Contextual</p>
+        
+        <textarea id="textInput" placeholder="Pega aquí el texto que quieres entender o pregunta sobre una herramienta..."></textarea>
+        
+        <button id="explainBtn" onclick="explainText()">✨ Explicar</button>
+        
+        <div class="status" id="status"></div>
+        <div class="error" id="error"></div>
+        <div class="result" id="result"></div>
+    </div>
+    
+    <script>
+        async function explainText() {
+            const text = document.getElementById('textInput').value.trim();
+            const btn = document.getElementById('explainBtn');
+            const status = document.getElementById('status');
+            const error = document.getElementById('error');
+            const result = document.getElementById('result');
+            
+            // Reset states
+            error.classList.remove('show');
+            result.classList.remove('show');
+            
+            if (!text) {
+                error.textContent = '⚠️ Por favor ingresa texto para explicar';
+                error.classList.add('show');
+                return;
+            }
+            
+            // Loading state
+            btn.disabled = true;
+            btn.textContent = '🔄 Procesando...';
+            status.textContent = 'Generando explicación...';
+            
+            try {
+                const response = await fetch('/api/explain', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        text: text,
+                        context: '',
+                        user_level: 'beginner'
+                    })
+                });
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                
+                const data = await response.json();
+                
+                if (data.status === 'success') {
+                    result.innerHTML = `<strong>Explicación:</strong><br><br>${data.explanation.replace(/\n/g, '<br>')}`;
+                    result.classList.add('show');
+                    status.textContent = `✅ Explicación generada (${data.model})`;
+                } else {
+                    throw new Error(data.error || 'Error desconocido');
+                }
+            } catch (e) {
+                error.textContent = `❌ Error: ${e.message}`;
+                error.classList.add('show');
+                status.textContent = '';
+            } finally {
+                btn.disabled = false;
+                btn.textContent = '✨ Explicar';
+            }
+        }
+        
+        // Enter to submit
+        document.getElementById('textInput').addEventListener('keydown', (e) => {
+            if (e.ctrlKey && e.key === 'Enter') {
+                explainText();
+            }
+        });
+    </script>
+</body>
+</html>

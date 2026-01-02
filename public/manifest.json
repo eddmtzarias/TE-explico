@@ -1,0 +1,10 @@
+{
+  "name": "OmniMaestro - Copiloto de Aprendizaje",
+  "short_name": "OmniMaestro",
+  "description": "IA pedagógica que explica software de forma adaptativa",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#667eea",
+  "theme_color": "#667eea",
+  "orientation": "portrait-primary"
+}
